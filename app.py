@@ -28,7 +28,6 @@ def predictRoute():
     return render_template("Predicted result.html", result=result)
 
 clApp = ClientApp("test2.jpg")
-port = int(os.environ.get("PORT", 5000))
 
 if __name__=="__main__":
-    app.run(port=port, debug=True)
+    app.run( debug=True)
